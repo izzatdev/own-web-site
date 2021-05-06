@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    width: 100%;
+    height:100px;
+    border: none;
+    box-sizing: border-box;
+    background-image: url("../images/navback.jpg");
+    background-size: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.navbar:hover{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.2),transparent,transparent), url("../images/navback.jpg");
+}
+.navbar ul li{
+    list-style: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    margin: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar ul{
+    display: flex;
+
+}
+.navbar ul li a{
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    color: #4545db;
+    font-size: 20px;
+}
+.navbar ul li a:hover{
+    color: #ffffff;
+}
+.navbar ul li:active{
+   background: #51C0A1;
+    border: 2px outset palegreen;
+}
+.main{
+    width: 100%;
+    height:800px;
+    background-image: url("../images/body.jpg");
+    background-size: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main:hover{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.2),transparent,transparent), url("../images/body.jpg") ;
+}
+.imgsite{
+    width: 40%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+.leftbody {
+    width: 40%;
+    height: 30%;
+}
+.leftbody h1,.leftbody h2,.leftbody p{
+    font-family: sans-serif;
+    color: grey;
+    letter-spacing: 1.5px;
+}
+.leftbody h1:hover,.leftbody h2:hover,.leftbody p:hover{
+   cursor: pointer;
+    color: white;
+    animation: text 2s linear;
+}
+
+.imagediv{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    background-image: url("../images/me.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: image 3s infinite ease-in-out;
+}
+.footer1{
+    margin: 1rem 0;
+    width: 100%;
+    height: 800px;
+    background-image: url("../images/footer1.jpg");
+    background-size: 100% 800px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer1:hover{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.2),transparent,transparent),url("../images/footer1.jpg");
+}
+.aboutme{
+    width: 800px;
+    height: 500px;
+    background-color: #51C0A1;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: normal;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    font-family: sans-serif;
+    color: white;
+    letter-spacing: 2px;
+}
+.aboutme h2{
+    animation: hi 15s linear infinite;
+}
+address{
+    text-align: right;
+}
+
+p a{
+    text-decoration: none;
+    color: orangered;
+}
+.footer2{
+    width: 100%;
+    height: 350px;
+    background-image: url("../images/footer2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 350px;
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.footer2:hover{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.2),transparent,transparent),url("../images/footer2.jpg");
+}
+.platforms{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.platforms a{
+    width:100%;
+    height: 100%;
+}
+.platforms a img{
+    width: 100%;
+    height: 100%;
+}
+.platelements{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+@keyframes image{
+      0%{
+          transform: translate(0,0);
+      }
+      50%{
+          transform: translate(100px,0);
+      }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@keyframes text {
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.1,1.1);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+@keyframes hi {
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(600px,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
