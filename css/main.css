@@ -171,7 +171,7 @@ p a{
           transform: translate(0,0);
       }
       50%{
-          transform: translate(10%,0);
+          transform: translate(5%,0);
       }
     100%{
         transform: translate(0,0);
